@@ -1,7 +1,7 @@
 import Link from "next/link";
-import AuthForm from "./components/AuthForm/AuthForm";
+import RegistrationForm from "../components/RegistrationForm/RegistrationForm";
 
-export default function Home() {
+export default function RegistrationPage() {
   return (
     <div className="flex items-center min-h-screen p-6 bg-gray-50">
       <div className="flex h-full w-full sm:w-fit mx-auto overflow-hidden bg-white rounded-lg shadow-xl">
@@ -17,20 +17,15 @@ export default function Home() {
                 alt="Логотип СПБ РОО МФ Призвание"
               />
             </a>
-            <AuthForm />
+            <RegistrationForm />
             <hr className="mt-6 mb-4 md:mt-8 md:mb-6" />
-            <div className="flex flex-row justify-between items-center">
+            <div className="flex flex-row justify-start gap-2 items-center">
+              <p className="text-sm text-start">Уже зарегистрировались?</p>
               <Link
-                className="text-sm text-center font-medium text-blue-600 hover:underline outline-none"
-                href="/reset"
+                className="text-sm text-start font-medium text-blue-600 hover:underline outline-none"
+                href="/"
               >
-                Забыли пароль?
-              </Link>
-              <Link
-                className="text-sm text-center font-medium text-blue-600 hover:underline outline-none"
-                href="/registration"
-              >
-                Создать аккаунт
+                Войти
               </Link>
             </div>
           </div>
