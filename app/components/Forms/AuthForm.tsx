@@ -5,7 +5,9 @@ export default function AuthForm() {
         <span className="text-gray-700">E-mail</span>
         <input
           className="block w-full mt-1 px-3.5 py-2.5 rounded-md shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-blue-600 outline-none text-sm form-input"
-          placeholder="example@example.ru"
+          placeholder="ivanov@example.ru"
+          name="email"
+          type="email"
         />
       </label>
       <label className="block mt-4 text-base">
@@ -13,6 +15,7 @@ export default function AuthForm() {
         <input
           className="block w-full mt-1 px-3.5 py-2.5 rounded-md shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-blue-600 outline-none text-sm form-input"
           placeholder="***************"
+          name="password"
           type="password"
         />
       </label>
